@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,18 +37,18 @@
                                 <color key="backgroundColor" red="0.88321474357295704" green="0.8866600537799163" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2F-mh-jwf">
-                                <rect key="frame" x="191" y="270" width="71" height="60"/>
+                                <rect key="frame" x="274" y="303" width="71" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="EHc-8x-ShV" userLabel="Heart">
-                                <rect key="frame" x="270" y="270" width="60" height="60"/>
+                                <rect key="frame" x="353" y="303" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swift" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8w-NE-oVA">
-                                <rect key="frame" x="338" y="270" width="110" height="60"/>
+                                <rect key="frame" x="421" y="303" width="110" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="366" y="65"/>
+            <point key="canvasLocation" x="370" y="65"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Wgm-tQ-ALd">
@@ -72,12 +73,24 @@
                     <view key="view" contentMode="scaleToFill" id="Aur-aK-0wt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x52-Ys-sD0">
+                                <rect key="frame" x="56" y="0.0" width="319" height="667"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x52-Ys-sD0" firstAttribute="top" secondItem="Aur-aK-0wt" secondAttribute="top" id="8Qb-1I-Jv9"/>
+                            <constraint firstAttribute="bottom" secondItem="x52-Ys-sD0" secondAttribute="bottom" id="Pqc-ey-dMt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x52-Ys-sD0" secondAttribute="trailing" constant="-16" id="xM9-Hg-WYw"/>
+                            <constraint firstItem="x52-Ys-sD0" firstAttribute="leading" secondItem="Aur-aK-0wt" secondAttribute="leadingMargin" constant="40" id="xrz-th-cdt"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4F-Di-stL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423" y="66"/>
+            <point key="canvasLocation" x="-423.19999999999999" y="65.217391304347828"/>
         </scene>
     </scenes>
     <resources>
